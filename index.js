@@ -46,6 +46,6 @@ const listen = (app, port) => {
       })
 }
 
-listen(app, 3010)
+listen(app, config.PORT)
 
 

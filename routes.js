@@ -36,6 +36,8 @@ const routes = (app) => {
     })
 
     app.put("/", (req, res) => {
+        req.session.user = "bob"
+        console.log(req.session)
         res.send("I putted")
     })
 
